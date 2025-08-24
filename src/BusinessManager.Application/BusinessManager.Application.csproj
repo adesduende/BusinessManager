@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\BusinessManager.Domain\BusinessManager.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="UseCases\Role\DeleteRole\" />
+	</ItemGroup>
+
+</Project>
