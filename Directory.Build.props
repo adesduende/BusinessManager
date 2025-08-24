@@ -1,0 +1,14 @@
+﻿<Project >
+    <PropertyGroup Condition="'$(MSBuildProjectName)' != 'BusinessManager.Web'">
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(MSBuildProjectExtension)' != '.dcproj' AND '$(MSBuildProjectName)' != 'BusinessManager.Web'">
+        <PackageReference Include="SonarAnalyzer.CSharp">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive;</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+</Project>
